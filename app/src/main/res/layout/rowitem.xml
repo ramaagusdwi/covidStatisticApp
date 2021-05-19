@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:weightSum="1">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="33dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+        <TextView
+            android:id="@+id/textViewJumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="295,449"
+            android:textColor="@color/grey"
+            android:textFontWeight="600"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Total Case"
+            android:textColor="@color/yellow"
+            android:textFontWeight="400"
+            android:textSize="12sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.4"
+        android:src="@drawable/ic_innocent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

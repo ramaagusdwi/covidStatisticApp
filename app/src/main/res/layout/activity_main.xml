@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <!-- rounded green bg -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/top_left_right_corner_rounded"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Statistics"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="24sp" />
+
+            <!--change languange -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_flag"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_indonesia" />
+
+                <TextView
+                    android:id="@+id/tv_languange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="ID"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_play_arrow" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--end change languange -->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--end horizontal  -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Select Country"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Last Update 2-10-2020"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/chooseCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_white2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="13dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_mark" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/blackT"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_arrow_down" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- custom spinner here -->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--end rounded green bg  -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!--content below rounded green bg -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="20dp"
+            android:numColumns="2"
+            android:verticalSpacing="20dp" />
+
+        <!-- content ratio view -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_border"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Ratio of Recovery"
+                android:textColor="@color/blackT"
+                android:textFontWeight="600"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="75 %"
+                    android:textColor="@color/blackT"
+                    android:textFontWeight="700"
+                    android:textSize="14sp" />
+
+                <app.futured.donut.DonutProgressView
+                    android:id="@+id/donut_view"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    app:donut_bgLineColor="@color/line2"
+                    app:donut_gapAngle="0"
+                    app:donut_gapWidth="0"
+                    app:donut_strokeWidth="10dp" />
+
+                <app.futured.donut.DonutProgressView
+                    android:id="@+id/donut_view2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:donut_bgLineColor="@color/white"
+                    app:donut_gapAngle="30"
+                    app:donut_gapWidth="110"
+                    app:donut_strokeWidth="10dp" />
+
+                <app.futured.donut.DonutProgressView
+                    android:id="@+id/donut_view3"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center"
+                    app:donut_bgLineColor="@color/white"
+                    app:donut_gapAngle="-60"
+                    app:donut_gapWidth="290"
+                    app:donut_strokeWidth="10dp" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_shape_green" />
+
+                        <TextView
+                            android:id="@+id/tv_affected"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="63,187"
+                            android:textColor="@color/blackT"
+                            android:textFontWeight="700"
+                            android:textSize="14sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Affected"
+                        android:textColor="@color/text_grey"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_shape_green" />
+
+                        <TextView
+                            android:id="@+id/tv_recovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="221,340"
+                            android:textColor="@color/blackT"
+                            android:textFontWeight="700"
+                            android:textSize="14sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Recovered"
+                        android:textColor="@color/text_grey"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

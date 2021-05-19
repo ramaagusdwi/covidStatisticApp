@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Statistik Covid</string>
+    <!--api-->
+    <string name="warning_not_connect">Tidak dapat terhubung dengan server</string>
+    <string name="warning_unknown_error">An unknown error occurred.</string>
+    <string name="warning_error">Terjadi kesalahan pada jaringan</string>
+    <string name="warning_lengkapi_data">Data gagal disimpan, silahkan cek ulang isian data</string>
+</resources>

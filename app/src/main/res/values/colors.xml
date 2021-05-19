@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BFA6</color>
+    <color name="colorPrimaryDark">#019581</color>
+    <color name="colorAccent">#FFBB86FC</color>
+    <color name="brightGray">#3F414E</color>
+    <color name="gableGreen80">#CC1A3B34</color>
+    <color name="silver75">#BFC4C4C4</color>
+    <color name="red">#FF464F</color>
+    <color name="yellow">#FFC542</color>
+    <color name="blue">#09B5FF</color>
+    <color name="green">#CC00BFA6</color>
+    <color name="line">#99EFEFEF</color>
+    <color name="grey">#263238</color>
+    <color name="blackT"> #121212</color>
+    <color name="line2">#ECECEC</color>
+    <color name="line3">#01ECCD</color>
+    <color name="bg_white">#FFE5E5E5</color>
+    <color name="text_grey">#44444F</color>
+    <color name="soft_grey">#F3F3F3</color>
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
+
+
+<!--    100% — FF-->
+<!--    95% — F2-->
+<!--    90% — E6-->
+<!--    85% — D9-->
+<!--    80% — CC-->
+<!--    75% — BF-->
+<!--    70% — B3-->
+<!--    65% — A6-->
+<!--    60% — 99-->
+<!--    55% — 8C-->
+<!--    50% — 80-->
+<!--    45% — 73-->
+<!--    40% — 66-->
+<!--    35% — 59-->
+<!--    30% — 4D-->
+<!--    25% — 40-->
+<!--    20% — 33-->
+<!--    15% — 26-->
+<!--    10% — 1A-->
+<!--    5% — 0D-->
